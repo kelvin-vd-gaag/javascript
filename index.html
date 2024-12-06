@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<!--De button om de functie "toggleMenu" te callen-->
 <button class="hamburger-menu" onclick="toggleMenu()">Hamburger</button>
+<!--Desktop navigatie, zichtbaar bij 900 pixels of meer, onzichtbaar bij minder dan 900 pixels-->
 <nav class="desktop-nav">
   <ul>
     <li><a href="#">link desktop</a></li>
@@ -16,7 +19,7 @@
     <li><a href="#">link</a></li>
   </ul>
 </nav>
-
+<!--Mobile nav, onzichtbaar op desktop (Als het scherm groter is dan 900 pixels)-->
 <nav class="mobile-nav" id="mobile-nav">
   <ul>
     <li><a href="#">link mobile</a></li>
@@ -28,7 +31,10 @@
 </nav>
 <h1>Welkom op mijn portfolio</h1>
 <script>
+  //Wordt opgeroepen door de button boven in de HTML
   function toggleMenu() {
+    //Elke keer dat deze functie wordt gecalled voeg de show-mobile-nav toe aan de #mobile-nav.
+    //Als de #mobile-nav al actief is omdat er al 1 keer is op geklikt, haal de class weer weg
     document.getElementById("mobile-nav").classList.toggle("show-mobile-nav");
   }
 </script>
