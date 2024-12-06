@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<button class="hamburger-menu" onclick="toggleMenu()">Hamburger</button>
+<nav class="desktop-nav">
+  <ul>
+    <li><a href="#">link desktop</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+  </ul>
+</nav>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <ul>
+    <li><a href="#">link mobile</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+  </ul>
+</nav>
+<h1>Welkom op mijn portfolio</h1>
+<script>
+  function toggleMenu() {
+    document.getElementById("mobile-nav").classList.toggle("show-mobile-nav");
+  }
+</script>
+</body>
+</html>
